@@ -25,9 +25,9 @@ grains = [ ("second (grain) ", "(ثاني(ة|ه)?|ثواني|لحظ(ة|ه|ات))
          , ("hour (grain)"   , "ساع(ة|ه|ات)"                      , TG.Hour)
          , ("day (grain)"    , "يوم|(ا|أ)يام"                     , TG.Day)
          , ("week (grain)"   , "(ا|أ|إ)س(بوع|ابيع)"               , TG.Week)
-         , ("month (grain)"  , "شهر|(ا|أ|إ)شهر"                   , TG.Month)
+         , ("month (grain)"  , "شهر|(ا|أ|إ)شهر|شهور"              , TG.Month)
          , ("quarter (grain)", "(ربع(ين|ان)|[أا]رباع)(سنة|عام)?"  , TG.Quarter)
-         , ("year (grain)"   , "سن(ة|ين)|عام"                     , TG.Year)
+         , ("year (grain)"   , "سن(ة|ين)|عام|(ا|أ|إ)عوام"         , TG.Year)
          ]
 
 rules :: [Rule]

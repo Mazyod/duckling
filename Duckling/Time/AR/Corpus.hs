@@ -146,6 +146,10 @@ allExamples = concat
              [ "الشهر الماض" ]
   , examples (datetime (2013, 3, 1, 0, 0, 0) Month)
              [ "الشهر التالي" ]
+  , examples (datetime (2012, 8, 0, 0, 0, 0) Month)
+             [ "قبل 6 شهور"
+             , "منذ ست أشهر"
+             ]
   , examples (datetime (2012, 1, 1, 0, 0, 0) Year)
              [ "السنة السابقة" ]
   , examples (datetime (2014, 1, 1, 0, 0, 0) Year)
