@@ -45,6 +45,7 @@ import qualified Duckling.Time.HR.Corpus as HRTime
 import qualified Duckling.Time.HE.Corpus as HETime
 import qualified Duckling.Time.HU.Corpus as HUTime
 import qualified Duckling.Time.IT.Corpus as ITTime
+import qualified Duckling.Time.JA.Corpus as JATime
 import qualified Duckling.Time.KO.Corpus as KOTime
 import qualified Duckling.Time.NB.Corpus as NBTime
 import qualified Duckling.Time.NL.Corpus as NLTime
@@ -54,6 +55,7 @@ import qualified Duckling.Time.PT.Corpus as PTTime
 import qualified Duckling.Time.RO.Corpus as ROTime
 import qualified Duckling.Time.RU.Corpus as RUTime
 import qualified Duckling.Time.SV.Corpus as SVTime
+import qualified Duckling.Time.TR.Corpus as TRTime
 import qualified Duckling.Time.UK.Corpus as UKTime
 import qualified Duckling.Time.VI.Corpus as VITime
 import qualified Duckling.Time.ZH.Corpus as ZHTime
@@ -198,7 +200,7 @@ getCorpusForLang = \case
   ID -> (testContext, testOptions, [])
   IS -> (testContext, testOptions, [])
   IT -> ITTime.corpus
-  JA -> (testContext, testOptions, [])
+  JA -> JATime.corpus
   KA -> (testContext, testOptions, [])
   KM -> (testContext, testOptions, [])
   KN -> (testContext, testOptions, [])
@@ -220,7 +222,7 @@ getCorpusForLang = \case
   TA -> (testContext, testOptions, [])
   TE -> (testContext, testOptions, [])
   TH -> (testContext, testOptions, [])
-  TR -> (testContext, testOptions, [])
+  TR -> TRTime.corpus
   UK -> UKTime.corpus
   VI -> VITime.corpus
   ZH -> ZHTime.corpus

@@ -368,6 +368,7 @@ library
                      , Duckling.Duration.HU.Rules
                      , Duckling.Duration.IT.Rules
                      , Duckling.Duration.JA.Corpus
+                     , Duckling.Duration.JA.Rules
                      , Duckling.Duration.KA.Corpus
                      , Duckling.Duration.KA.Rules
                      , Duckling.Duration.KO.Corpus
@@ -433,6 +434,7 @@ library
                      , Duckling.Numeral.DA.Rules
                      , Duckling.Numeral.DE.Corpus
                      , Duckling.Numeral.DE.Rules
+                     , Duckling.Numeral.DE.NumParser
                      , Duckling.Numeral.EL.Corpus
                      , Duckling.Numeral.EL.Rules
                      , Duckling.Numeral.EN.Corpus
@@ -741,6 +743,8 @@ library
                      , Duckling.Time.HU.Rules
                      , Duckling.Time.IT.Corpus
                      , Duckling.Time.IT.Rules
+                     , Duckling.Time.JA.Corpus
+                     , Duckling.Time.JA.Rules
                      , Duckling.Time.KA.Corpus
                      , Duckling.Time.KA.Rules
                      , Duckling.Time.KO.Corpus
@@ -1148,6 +1152,7 @@ test-suite duckling-test
                      , Duckling.Time.HE.Tests
                      , Duckling.Time.HU.Tests
                      , Duckling.Time.IT.Tests
+                     , Duckling.Time.JA.Tests
                      , Duckling.Time.KA.Tests
                      , Duckling.Time.KO.Tests
                      , Duckling.Time.NB.Tests
@@ -1157,6 +1162,7 @@ test-suite duckling-test
                      , Duckling.Time.RO.Tests
                      , Duckling.Time.RU.Tests
                      , Duckling.Time.SV.Tests
+                     , Duckling.Time.TR.Tests
                      , Duckling.Time.UK.Tests
                      , Duckling.Time.VI.Tests
                      , Duckling.Time.ZH.Tests
