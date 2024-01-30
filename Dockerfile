@@ -1,4 +1,4 @@
-FROM haskell:8-buster AS builder
+FROM haskell:9.8.1-slim-buster AS builder
 
 RUN apt-get update -qq && \
   apt-get install -qq -y libssl-dev libpcre3 libpcre3-dev build-essential pkg-config --fix-missing --no-install-recommends && \
@@ -19,9 +19,9 @@ RUN stack setup
 # in parallel. However, this can cause OOM issues as the linking step
 # in GHC can be expensive. If the build fails, try specifying the
 # '-j1' flag to force the build to run sequentially.
-RUN stack install
+RUN stack install --install-ghc
 
-FROM debian:buster
+FROM debian:buster-slim
 
 ENV LANG C.UTF-8
 
