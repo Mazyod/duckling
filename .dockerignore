@@ -1,3 +1,8 @@
-Dockerfile
-.stack-work
-log
+# ignore everything ...
+*
+
+# ... except
+!/Duckling/
+!/exe/
+!/duckling.cabal
+!/stack.yaml
